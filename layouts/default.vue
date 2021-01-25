@@ -49,6 +49,7 @@ export default {
       console.log(to)
       const elemToFlip = document.querySelector('[data-flip-id]')
       if (elemToFlip) {
+        console.log('flipping')
         this.lastState = Flip.getState(elemToFlip)
       }
       // this.elUfoTargetHeader.appendChild(this.elUfowrapper)
@@ -64,9 +65,24 @@ export default {
     // the done callback is optional when
     // used in combination with CSS
     enter(el, done) {
+      const elemToFlip = document.querySelector('[data-flip-id]')
+      if (elemToFlip && this.lastState) {
+        Flip.from(this.lastState, {
+          targets: elemToFlip,
+          duration: 1,
+          absolute: true,
+          onComplete: this.$nextTick(function () {
+            this.lastState = null
+            console.log('Enter', el)
+            done()
+          }),
+          // other Flip properties
+        })
+      }
+
+      // this.lastState = null
       // ...
-      console.log('Enter', el)
-      done()
+      // done()
     },
     afterEnter(el) {
       // ...
