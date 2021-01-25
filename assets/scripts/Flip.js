@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*!
  * EasePack 3.6.0
  * https://greensock.com
@@ -6,9 +7,8 @@
  * Subject to the terms at https://greensock.com/standard-license or for
  * Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com
-*/
+ */
 
-/* eslint-disable */
 import { getGlobalMatrix, _getDocScrollTop, _getDocScrollLeft, Matrix2D, _setDoc } from "./utils/matrix.js";
 
 var _id = 1,

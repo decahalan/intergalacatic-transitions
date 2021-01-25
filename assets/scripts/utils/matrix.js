@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*!
  * matrix 3.6.0
  * https://greensock.com
@@ -6,9 +7,7 @@
  * Subject to the terms at https://greensock.com/standard-license or for
  * Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com
-*/
-
-/* eslint-disable */
+ */
 var _doc,
     _win,
     _docElement,
