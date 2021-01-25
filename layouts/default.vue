@@ -49,8 +49,8 @@ export default {
       console.log(to)
       const elemToFlip = document.querySelector('[data-flip-id]')
       if (elemToFlip) {
-        console.log('flipping')
         this.lastState = Flip.getState(elemToFlip)
+        console.log('flipping', this.lastState)
       }
       // this.elUfoTargetHeader.appendChild(this.elUfowrapper)
       // this.doUfoFlip(this.elUfoTargetNav)
