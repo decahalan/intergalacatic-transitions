@@ -1,33 +1,11 @@
 <template>
-  <div class="absolute">
-    <div>
-      <Logo />
-      <h1 class="title">intergalactic</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-        <nuxt-link
-          data-flip-id="img"
-          class="block w-12 h-12 bg-blue-600 full"
-          to="/about"
-          >About</nuxt-link
-        >
-      </div>
-    </div>
+  <div class="absolute bottom-0 right-0 m-4">
+    <nuxt-link
+      data-flip-id="img"
+      class="block w-12 h-12 bg-blue-600 full"
+      to="/about"
+      >About</nuxt-link
+    >
   </div>
 </template>
 
