@@ -11,9 +11,12 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.8.2",
+    "gsap": "./gsap-bonus.tgz",
     "nuxt": "^2.14.12",
-    "gsap": "./gsap-bonus.tgz"
+    "postcss": "^8.2.2",
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
